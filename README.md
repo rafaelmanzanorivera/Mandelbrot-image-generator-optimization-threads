@@ -23,6 +23,6 @@ image,totalTime,mendelbrotTime,writeTime,nThreads,speedUp
 "mandelbrot_10488x10488","31.003","20.509","10.493"","4","STATIC","1.71248"
 "mandelbrot_10488x10488","26.695","16.205","10.489"","4","DYNAMIC","1.98884"
 "mandelbrot_10488x10488","30.739","18.67","12.068"","6","STATIC","1.72719"
-"mandelbrot_10488x10488","27.775","17.315","10.46"","6","DYNAMIC","1.9115"
+"mandelbrot_10488x10488","27.775","17.315","10.46"","6","DYNAMIC","1.9115". 
 
 As each chunk of work has different work load to the CPU even if it has same size (because of the nature of mandelbrot calculation), dinamic division performs best. This is because we divide all work in small chunks (instead of as chunks as number of threads) and each thread performs the calculation of several chunks, so in the end the overall work load ends balanced much better this way. 
