@@ -1,5 +1,5 @@
 # Mandelbrot-image-generator-optimization-threads
-Took existing Mandelbrot image generator from https://www-fourier.ujf-grenoble.fr/mobile/~parisse/info/makepng.cc and parallelize it using C++11 threads.
+Took existing Mandelbrot image generator from [here](https://www-fourier.ujf-grenoble.fr/mobile/~parisse/info/makepng.cc) and parallelize it using C++11 threads.
 
 Two parallel modes implemented, static and dynamic.
 
